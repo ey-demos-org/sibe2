@@ -2,8 +2,8 @@
 Your project's description....
 
 ## Environments
-- Preview: https://main--sibe--mikeippi123.aem.page/
-- Live: https://main--sibe--mikeippi123.aem.live/
+- Preview: https://main--sibe2--ey-demos-org.aem.page/
+- Live: https://main--sibe2--ey-demos-org.aem.live/
 
 ## Documentation
 
