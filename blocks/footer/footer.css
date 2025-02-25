@@ -1,0 +1,73 @@
+.footer-wrapper {
+  width: 100%;
+  display: flex;
+  background-color: var(--footer-background-color);
+  font-family: var(--body-font-family);
+  font-size: var(--body-font-size);
+  font-style: normal;
+  font-weight: var(--body-font-weight);
+  justify-content: center;
+}
+
+.footer-wrapper .footer {
+  width: 1366px;
+  padding: 70px 30px 48px;
+}
+
+.footer-wrapper .columns div > div:first-of-type {
+  text-align: start;
+  display: block;
+}
+
+.footer-wrapper .columns div > div:first-of-type picture {
+  display: inline-block;
+}
+
+.footer-wrapper .columns div > div:nth-of-type(2) {
+  position: relative;
+  margin: 1em;
+  overflow: hidden;
+  
+  ul {
+    list-style-type: none; /* Remove default list styling */ 
+    padding: 0;           /* Remove padding */ 
+    margin: 0;            /* Remove margin */ 
+    display: flex;        /* Use flexbox for horizontal layout */
+    font-family: var(--footnote-microcopy-link-font-family);
+    font-weight: --bold-body-font-weight;
+    color: var(--green-link);
+
+    li {
+      margin: 0 10px;      /* Add some spacing between items */ 
+
+      a {
+        text-decoration: none;
+        color: var(--green-link);
+        text-decoration-line: underline;
+      }
+    }
+
+    li:not(:last-child)::after { 
+      content: "|";        /* Add pipe after each item except the last */
+      font-weight: --bold-body-font-weight;
+      margin-left: 20px;  /* Space between item and pipe */ 
+    } 
+  }
+
+}
+
+.footer-wrapper .logo {
+  position: relative;
+  flex: 0 0 auto;
+}
+
+footer.footer-wrapper::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  height: 66px;
+  width: 100%;
+  background: url("./media_1f79aedd4fadc0d15af99d31259d84202af84b57a.png") repeat-x;
+  background-size: 100% 66px
+}
